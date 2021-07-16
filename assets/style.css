@@ -1,0 +1,15 @@
+#wrapper {
+    border: 1px solid rgb(110, 0, 110);
+}
+
+#currentTime {
+    float: right;
+}
+
+#questionsDiv {
+    margin: 5px;
+}
+
+#startTime {
+    background-color: rgb(110, 0, 110);    
+}
