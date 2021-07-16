@@ -1,5 +1,10 @@
 #wrapper {
     border: 1px solid rgb(110, 0, 110);
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 500px;
+    height: 500px;
 }
 
 #currentTime {
@@ -11,5 +16,9 @@
 }
 
 #startTime {
-    background-color: rgb(110, 0, 110);    
+    background-color: rgb(110, 0, 110);
+    color: white;
+    font-size: 20px;
+    padding: 15px, 30px;
+    margin-left: 37%;
 }
