@@ -82,7 +82,7 @@ li {
     background-color: rgb(110, 0, 110);
     margin-top: 10px;
     padding: 5px 15px;
-    width: 80%;
+    width: fit-content;
     border-radius: 8px;
     font-size: 18px;
     color: white;
@@ -90,5 +90,5 @@ li {
 
 #createDiv {
     margin-top: 20px;
-    border-top: 1px solid lightgray;
+    border-top: 2px solid lightgray;
 }
