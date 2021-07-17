@@ -24,7 +24,7 @@
 
 #goBack {
     background-color: rgb(110, 0, 110);
-    position: relative;
+
     padding: 10px;
     font-size: 20px;
     color: white;
@@ -37,7 +37,7 @@
 
 #clear {
     background-color: rgb(110, 0, 110);
-    position: relative;
+
     padding: 10px;
     font-size: 20px;
     color: white;
