@@ -24,7 +24,7 @@
 
 #goBack {
     background-color: rgb(110, 0, 110);
-
+    margin-left: 60px;
     padding: 10px;
     font-size: 20px;
     color: white;
@@ -37,7 +37,7 @@
 
 #clear {
     background-color: rgb(110, 0, 110);
-
+    margin-left: 20px;
     padding: 10px;
     font-size: 20px;
     color: white;
@@ -91,4 +91,8 @@ li {
 #createDiv {
     margin-top: 20px;
     border-top: 2px solid lightgray;
+}
+
+#highScore {
+    margin-left: 120px;
 }

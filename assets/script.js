@@ -158,7 +158,7 @@ function allDone() {
 
         } else {
             var finalScore = {
-                inilettials: initials,
+                initials: initials,
                 score: timeRemaining
             }
             console.log(finalScore);
