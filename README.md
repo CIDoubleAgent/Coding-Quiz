@@ -8,3 +8,4 @@ When the user clicks "Start Quiz", a timer will begin and the app will cycle thr
 
 Link to deployed application: https://cidoubleagent.github.io/Coding-Quiz/
 
+![Code Quiz Screenshot](https://user-images.githubusercontent.com/85477623/126098960-22bda870-3111-4745-bcd6-6bed71678de1.png)
