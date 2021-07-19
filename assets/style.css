@@ -21,6 +21,11 @@
     color: white;
 }
 
+#startTime:hover {
+    color: lime;
+    cursor: pointer;
+}
+
 #goBack {
     background-color: rgb(110, 0, 110);
     padding: 10px;
@@ -31,6 +36,11 @@
     text-decoration: none;
 }
 
+#goBack:hover {
+    color: lime;
+    cursor: pointer;
+}
+
 #clear {
     background-color: rgb(110, 0, 110);
     margin-left: 20px;
@@ -39,6 +49,11 @@
     right: 5%;
     color: white;
     text-align: center;
+}
+
+#clear:hover {
+    color: lime;
+    cursor: pointer;
 }
 
 button {
@@ -55,9 +70,14 @@ textarea {
 #Submit {
     background-color: rgb(110, 0, 110);
     margin-left: 33%;
-    padding: 15px 32px;
+    padding: 10px;
     font-size: 20px;
     color: white;
+}
+
+#Submit:hover {
+    color: lime;
+    cursor: pointer;
 }
 
 label {
