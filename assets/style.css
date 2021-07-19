@@ -1,8 +1,8 @@
 #wrapper {
-    position: absolute;
-    top: 20%;
-    left: 34%;
-    width: 435px;
+    padding-top: 100px;
+    width: 460px;
+    margin: auto;
+    text-align: center;
 }
 
 #currentTime {
@@ -16,20 +16,16 @@
 
 #startTime {
     background-color: rgb(110, 0, 110);
-    color: white;
     font-size: 20px;
     padding: 15px, 30px;
-    margin-left: 37%;
+    color: white;
 }
 
 #goBack {
     background-color: rgb(110, 0, 110);
-    margin-left: 60px;
     padding: 10px;
     font-size: 20px;
     color: white;
-    top: 30%;
-    left: 55%;
     width: auto;
     text-align: center;
     text-decoration: none;
@@ -40,9 +36,8 @@
     margin-left: 20px;
     padding: 10px;
     font-size: 20px;
-    color: white;
-    top: 30%;
     right: 5%;
+    color: white;
     text-align: center;
 }
 
@@ -82,9 +77,9 @@ li {
     background-color: rgb(110, 0, 110);
     margin-top: 10px;
     padding: 5px 15px;
-    width: fit-content;
     border-radius: 8px;
     font-size: 18px;
+    width: fit-content;
     color: white;
 }
 
@@ -96,3 +91,10 @@ li {
 #highScore {
     margin-left: 120px;
 }
+
+#buttonBox {
+    padding-top: 5px;
+    border-top: solid;
+    border-color: lightgrey;
+}
+

@@ -132,6 +132,7 @@ function allDone() {
    let createLabel = document.createElement("label");
     createLabel.setAttribute("id", "createLabel");
     createLabel.textContent = "Enter your initials: ";
+    
 
     questionsDiv.appendChild(createLabel);
 
@@ -177,3 +178,5 @@ function allDone() {
     });
 
 }
+
+console.log(window.innerWidth)
