@@ -36,7 +36,7 @@ let wrapper = document.querySelector("#wrapper");
 
 let secondsLeft = 75;
 let holdInterval = 0;
-let penalty = 10;
+let penalty = 15;
 let ulCreate = document.createElement("ul");
 
 timer.addEventListener("click", function () {

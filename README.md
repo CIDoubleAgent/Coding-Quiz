@@ -1,2 +1,10 @@
 # Coding-Quiz
+
 Test your coding knowledge!
+
+This is a coding themed quiz made using html, css and javascript.
+
+When the user clicks "Start Quiz", a timer will begin and the app will cycle through an array of questions with multiple choice answers. For each incorrect answer a time penalty of -15 seconds is incurred while correct answers incur no penalty. The time remaining at the end of the quiz is the users score. Upon either the user completing the quiz or the timer running out the user is prompted to enter their initials and save their score.
+
+Link to deployed application: https://cidoubleagent.github.io/Coding-Quiz/
+
