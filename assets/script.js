@@ -34,7 +34,7 @@ let timer = document.querySelector("#startTime");
 let questionsDiv = document.querySelector("#questionsDiv");
 let wrapper = document.querySelector("#wrapper");
 
-let secondsLeft = 75;
+let secondsRemaining = 75;
 let holdInterval = 0;
 let penalty = 15;
 let ulCreate = document.createElement("ul");
@@ -42,10 +42,10 @@ let ulCreate = document.createElement("ul");
 timer.addEventListener("click", function () {
     if (holdInterval === 0) {
         holdInterval = setInterval(function () {
-            secondsLeft--;
-            currentTime.textContent = "Time: " + secondsLeft;
+            secondsRemaining--;
+            currentTime.textContent = "Time: " + secondsRemaining;
 
-            if (secondsLeft <= 0) {
+            if (secondsRemaining <= 0) {
                 clearInterval(holdInterval);
                 allDone();
                 currentTime.textContent = "Time's Up!";
@@ -87,7 +87,7 @@ function compare(event) {
             createDiv.textContent = "Correct! The answer is:  " + questions[questionIndex].answer;
 
         } else {
-            secondsLeft = secondsLeft - penalty;
+            secondsRemaining = secondsRemaining - penalty;
             createDiv.textContent = "Wrong! The correct answer is:  " + questions[questionIndex].answer;
         }
 
@@ -102,7 +102,6 @@ function compare(event) {
         render(questionIndex);
     }
     questionsDiv.appendChild(createDiv);
-
 }
 
 function allDone() {
@@ -120,8 +119,8 @@ function allDone() {
 
     questionsDiv.appendChild(createP);
 
-    if (secondsLeft >= 0) {
-        var timeRemaining = secondsLeft;
+    if (secondsRemaining >= 0) {
+        var timeRemaining = secondsRemaining;
         var createP2 = document.createElement("p");
         clearInterval(holdInterval);
         createP.textContent = "Your final score is: " + timeRemaining;
