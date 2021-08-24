@@ -1,21 +1,21 @@
 let score = document.querySelector("#highScore");
 let back = document.querySelector("#goBack");
 let clear = document.querySelector("#clear");
+let highScores = localStorage.getItem("highScores");
 
 clear.addEventListener("click", function () {
     localStorage.clear();
     location.reload();
 });
 
-var allScores = localStorage.getItem("allScores");
-allScores = JSON.parse(allScores);
+highScores = JSON.parse(highScores);
 
-if (allScores !== null) {
+if (highScores !== null) {
 
-    for (var i = 0; i < allScores.length; i++) {
+    for (var i = 0; i < highScores.length; i++) {
 
         var createLi = document.createElement("li");
-        createLi.textContent = allScores[i].initials + " " + allScores[i].score;
+        createLi.textContent = highScores[i].initials + " " + highScores[i].score;
         score.appendChild(createLi);
     }
 }

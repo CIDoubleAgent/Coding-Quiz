@@ -46,7 +46,7 @@ quizTimer.addEventListener("click", function () {
 
             if (secondsRemaining <= 0) {
                 clearInterval(interval);
-                allDone();
+                done();
                 currentTime.textContent = "Time has run out!";
             }
         }, 1 * 1000);
@@ -92,7 +92,7 @@ function compare(event) {
     question++;
 
     if (question >= questionsArray.length) {
-        allDone();
+        done();
         createDiv.textContent = "End of quiz!" + " " + "You got  " + playerScore + "/" + questionsArray.length + " Correct!";
     } else {
         render(question);
@@ -100,13 +100,13 @@ function compare(event) {
     questionsDiv.appendChild(createDiv);
 }
 
-function allDone() {
+function done() {
     questionsDiv.innerHTML = "";
     currentTime.innerHTML = "";
 
     var createH1 = document.createElement("h1");
     createH1.setAttribute("id", "createH1");
-    createH1.textContent = "All Done!"
+    createH1.textContent = "Done!"
     questionsDiv.appendChild(createH1);
 
     var createP = document.createElement("p");
@@ -157,16 +157,15 @@ function allDone() {
                 score: timeRemaining
             }
             console.log(finalScore);
-            let allScores = localStorage.getItem("allScores");
-            if (allScores === null) {
-                allScores = [];
+            let highScores = localStorage.getItem("highScores");
+            if (highScores === null) {
+                highScores = [];
             } else {
-                allScores = JSON.parse(allScores);
+                highScores = JSON.parse(highScores);
             }
-            allScores.push(finalScore);
-            let newScore = JSON.stringify(allScores);
-            localStorage.setItem("allScores", newScore);
-
+            highScores.push(finalScore);
+            let newScore = JSON.stringify(highScores);
+            localStorage.setItem("highScores", newScore);
             window.location.replace("./highScores.html");
         }
     });
