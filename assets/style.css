@@ -1,17 +1,6 @@
-#wrapper {
-    padding-top: 100px;
-    width: 460px;
-    margin: auto;
-    text-align: center;
-}
-
 #currentTime {
     color: rgb(110, 0, 110);
     float: right;
-}
-
-#questionsDiv {
-    margin: 20px;
 }
 
 #startTime {
@@ -21,9 +10,20 @@
     color: white;
 }
 
+#wrapper {
+    padding-top: 100px;
+    width: 460px;
+    margin: auto;
+    text-align: center;
+}
+
 #startTime:hover {
     color: lime;
     cursor: pointer;
+}
+
+#questionsDiv {
+    margin: 20px;
 }
 
 #goBack {
@@ -36,11 +36,6 @@
     text-decoration: none;
 }
 
-#goBack:hover {
-    color: lime;
-    cursor: pointer;
-}
-
 #clear {
     background-color: rgb(110, 0, 110);
     margin-left: 20px;
@@ -49,6 +44,11 @@
     right: 5%;
     color: white;
     text-align: center;
+}
+
+#goBack:hover {
+    color: lime;
+    cursor: pointer;
 }
 
 #clear:hover {
@@ -80,17 +80,23 @@ textarea {
     cursor: pointer;
 }
 
-label {
-    margin-right: 10px;
-}
 input {
     margin-bottom: 20px;
     width: 50%;
     border: 1px solid lightgray;
 }
 
+label {
+    margin-right: 10px;
+}
+
 h1 {
     text-align: center;
+}
+
+#createDiv {
+    margin-top: 20px;
+    border-top: 2px solid lightgray;
 }
 
 li {
@@ -103,18 +109,12 @@ li {
     color: white;
 }
 
-#createDiv {
-    margin-top: 20px;
-    border-top: 2px solid lightgray;
-}
-
-#highScore {
-    margin-left: 120px;
-}
-
 #buttonBox {
     padding-top: 5px;
     border-top: solid;
     border-color: lightgrey;
 }
 
+#highScore {
+    margin-left: 120px;
+}

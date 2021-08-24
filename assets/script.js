@@ -123,12 +123,12 @@ function done() {
         questionsDiv.appendChild(createP2);
     }
 
-   let createLabel = document.createElement("label");
-    createLabel.setAttribute("id", "createLabel");
-    createLabel.textContent = "Enter your initials: ";
+   let makeLabel = document.createElement("label");
+   makeLabel.setAttribute("id", "makeLabel");
+   makeLabel.textContent = "Enter your initials: ";
     
 
-    questionsDiv.appendChild(createLabel);
+    questionsDiv.appendChild(makeLabel);
 
     var createInput = document.createElement("input");
     createInput.setAttribute("type", "text");
